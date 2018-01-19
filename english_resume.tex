@@ -1,0 +1,211 @@
+%!TEX program = xelatex
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[UTF8,11pt]{article}
+
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\usepackage{url} %这个我也不多说了
+\usepackage{fontspec,xltxtra,xunicode} %最新的mactex都有
+
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont{Heiti SC} %设置中文字体
+\XeTeXlinebreaklocale “zh”
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt %文章内中文自动换行，可以自行调节
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.425in}
+\addtolength{\evensidemargin}{-0.875in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{0pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSecheading}[2]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{-12pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[fullwidth]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://aljun.me/}{\Large Chen Yangyang}} & Email : \href{mailto:salamer\_gaga@163.com}{salamer\_gaga@163.com}\\
+  \href{http://aljun.me/}{Tech Blog: http://www.aljun.me} & Phone : (86) 183-1057-6552 \\
+  & Github: \href{https://github.com/salamer}{github.com/salamer}
+\end{tabular*}\vspace{-10pt}
+
+
+%-----------EDUCATION-----------------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Beijing University of Chemical Technology}{Beijing}
+      {School of Science / B.S. (Applied-Chemistry)}{2014.9  -- 2018.7}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{PROFESSIONAL EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{http://baidu.com/}{百度 (人工智能部 知识图谱组)}}{北京}
+      {算法实习生}{2017.5 -- 2017.8}
+      \resumeItemListStart
+        \resumeItem{}
+          {利用内部Hadoop平台使用朴素贝叶斯方法对百度百科已有数据进行数据挖掘，新增300万未知的知识图谱数据，正确率在95\%以上}
+        \resumeItem{}
+          {使用内部深度学习框架LegoNet，用CNN对搜索的点击结果的数据进行处理，优化现有搜索结果的排序}
+      \resumeItemListEnd
+    \resumeSubheading
+      {\href{http://megvii.com}{Megvii(Face++)}}{Beijing}
+      {Software developerIntern}{Jun 2016 - Oct 2016}
+      \resumeItemListStart
+        \resumeItem{}
+          {Built a JSON-gRPC gateway application generator based on Google Protobuf coded by Golang, which can read a .proto file and automatically generate a complete set of Goroutine RESTful Web service.}
+        \resumeItem{}
+          {Developed a deep learning training monitor via D3.js library internally. Designed a front-end cache structure to load data dynamically, and solved and optimized massive data visualization problem.}
+        \resumeItem{}
+          {Designed console interface of Deep Learning Cloud, which can be applied for virtual machine(GPU), modification and monitoring functions.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {\href{https://easyeasyoversea.com}{EasyEasyOversea (https://easyeasyoversea.com)}}{}
+      {Independent Developer}{Jan 2017 - Feb 2017}
+      \resumeItemListStart
+        \resumeItem{}
+          {The Best App for going abroad to study. It changes and optimize the situation of information asymmetry.}
+          \resumeItem{}
+          {刚上线一周, 搜索次数就超十万+, 被三家天使投资主动联系, 被六家该领域主要公司主动寻求合作}
+          \resumeItem{}
+          {MongoDB and Gevent based to build a high performance web spider plugins. Used ElasticSearch for the search engine back-end, used Golang to write a middleware to communicate with Redis for optimizing the concurrency. Django-Rest and Mysql based to build a forum which used redis for concurrency and used celery to build some asynchronous plugins. Used React and Bootstrap for the front-end and UI and D3.js for data visualization.}        
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{http://zhaduixueshe.com/}{ZhaDuiXueShe Official Website (http://zhaduixueshe.com)} }{}
+      {Independent Developer}{Jul 2015 - Sep 2015}
+      \resumeItemListStart
+        \resumeItem{}
+          {校内的学霸复习资料分享平台, 实现了组织博客系统, 学霸资料分科目分享平台, 对所有文章的Markdown支持, 实现了后台功能, 全面的在线报名系统, 通过访问者的角色, 控制权限管理, 实现明确的权限管理与分工}
+        \resumeItem{}
+          {基于Django框架搭建的后端, 使用MySql作为数据库, 利用Nginx 实现静态文件的负载均衡, 前端基于Bootstrap与JQeury,高峰期日访问量达到3000+}
+        
+      \resumeItemListEnd
+    \resumeSubheading
+      {\href{https://github.com/salamer/Juicy}{Juicy (github.com/salamer/Juicy)} }{}
+      {Independent Developer}{2017.12 -- 2018.1}
+      \resumeItemListStart
+        \resumeItem{}
+          {分布式 Key / Value 数据库, 独自实现了分布式一致性协议 Raft , 实现了数据压缩和持久化功能}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{COMPETITION EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeSubSecheading
+      {American Mathematical Modeling Contest / 2nd prize ( Honorable Mention )}{Feb 2016}
+      \resumeItemListStart
+        \resumeItem{}
+          {Fit the data from Algeria's available water resources, medical investments, and government regulatory data to obtain the correlations based on a gray system.}
+        \resumeItem{}
+          {Proposed KNN tricks to model the location of wells.}
+      \resumeItemListEnd
+    \resumeSubSecheading
+      {Amazon AWS Hackathon, Beijing / 3rd Prize ( Leader )}{Sep 2016}
+      \resumeItemListStart
+        \resumeItem{}
+          {Used Golang and Javascript development via gRPC, React and Docker methods to realize the JSON-based configuration files, automatically generating a complete set of front-end monitoring service. The source of the data is called by the scattered cluster in gRPC. Improved the structural support of the monitor's information source.}
+      \resumeItemListEnd
+    \resumeSubSecheading
+      {BloomBerg Code Your Way to Global Data / 1st prize}{Nov 2016}
+      \resumeItemListStart
+        \resumeItem{}
+          {Wrote a automated script for downloading acquisitions case(PDF) result: http://bloomberg-code-global-answer.win}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Award}
+  \resumeSubHeadingListStart
+    \resumeSubSecheading
+      { Renmin third prize scholarship}{Jul 2015}
+  \resumeSubHeadingListEnd
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Master Web development, data processing.}
+      {}
+    \resumeSubItem{Skill in Python, Go, C, Javascript, Ruby}
+      {}
+    \resumeSubItem{Skill in basic data structures and algorithms}
+      {}
+    \resumeSubItem{Familiar with data mining, machine learning, web protocol.}
+      {}
+    \resumeSubItem{Development experiences on Linux and Database}
+      {}
+    \resumeSubItem{Language: Mandarin , English (CET-6), Japanese (Basic Daily Communication)}
+      {}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
