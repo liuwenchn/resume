@@ -48,7 +48,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{0pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -56,20 +56,26 @@
 }
 
 \newcommand{\resumeSubSecheading}[2]{
-  \vspace{0pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-    \end{tabular*}\vspace{-7pt}
+      \textbf{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-16pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\vspace{2pt}\resumeItem{#1}{#2}\vspace{-7pt}}
+\newcommand{\resumeListSubItem}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+}
 
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{-12pt}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[fullwidth]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+\newcommand{\resumeItemListStart}{\vspace{-7pt}\begin{itemize}[fullwidth]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-10pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -86,7 +92,7 @@
 
 
 %-----------EDUCATION-----------------
-\section{EDUCATION}
+\section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Beijing University of Chemical Technology}{Beijing}
@@ -94,17 +100,17 @@
   \resumeSubHeadingListEnd
 
 
-%-----------EXPERIENCE-----------------
-\section{PROFESSIONAL EXPERIENCE}
+%-----------PROFESSIONAL EXPERIENCE-----------------
+\section{Professional Experiences}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {\href{http://baidu.com/}{Baidu (AIG  Knowledge Graph Group)}}{Beijing}
+      {\href{http://baidu.com/}{Baidu (AIG, Knowledge Graph Group)}}{Beijing}
       {Algorithms developer Intern}{May 2017 - Aug 2017}
       \resumeItemListStart
         \resumeItem{}
-          {In the internal Hadoop platform, I used naive bayesian method to do the data mining for all Baidu encyclopedia data,dding 3 million unknown knowledge graph data, and the accuracy rate was above 95 \%.}
+          {In the internal Hadoop platform, Using naive bayesian method to do the data mining for all Baidu encyclopedia data,dding 3 million unknown knowledge graph data, and the accuracy rate was above 95 \%.}
         \resumeItem{}
-          {In internal deep learning platform LegoNet, I used neural network method to process the data of the search results and optimize the sorting of existing search results.}
+          {In internal deep learning platform LegoNet, Using neural network method to process the data of the search results and optimize the sorting of existing search results.}
       \resumeItemListEnd
     \resumeSubheading
       {\href{http://megvii.com}{Megvii (Face++)}}{Beijing}
@@ -122,22 +128,29 @@
       {Independent Developer}{Jan 2017 - Feb 2017}
       \resumeItemListStart
         \resumeItem{}
-          {The Best App for going abroad to study. It changes and optimize the situation of information asymmetry.}
-          \resumeItem{}
-          {In the first week, the search was over 100,000 +, and was contacted by three angel investors, and was actively seeking cooperation from six major companies in the field.}
+          {The Best App for going abroad to study. It changes and optimize the situation of information asymmetry. In the first week, the search was over 100,000+, and was contacted by three angel investors, and was actively seeking cooperation from six major companies in the field.}
           \resumeItem{}
           {MongoDB and Gevent based to build a high performance web spider plugins. Used ElasticSearch for the search engine back-end, used Golang to write a middleware to communicate with Redis for optimizing the concurrency. Django-Rest and Mysql based to build a forum which used redis for concurrency and used celery to build some asynchronous plugins. Used React and Bootstrap for the front-end and UI and D3.js for data visualization.}        
       \resumeItemListEnd
 
-    \resumeSubheading
-      {\href{http://zhaduixueshe.com/}{ZhaDuiXueShe Official Website (http://zhaduixueshe.com)} }{}
-      {Independent Developer}{Jul 2015 - Sep 2015}
-      \resumeItemListStart
-        \resumeItem{}
-          { Built a review material sharing platform within university. Developed the blog system for classmates to share the review materials,and an offline organization for top 5\% students among schools to lecture and tutor others. The website supports Markdown format posts and back-end system including online registration system and administrator-based control system.}
-        \resumeItem{}
-          {Django-based framework to build back-end using MySql. Used Nginx handling the loading and static file. Use Uwsgi and Django as service back-end. The front-end was based on the Bootstrap and JQeury.}
-      \resumeItemListEnd
+      \resumeSubheading
+        {\href{http://zhaduixueshe.com/}{ZhaDuiXueShe Official Website (http://zhaduixueshe.com)} }{}
+        {Independent Developer}{Jul 2015 - Sep 2015}
+        \resumeItemListStart
+          \resumeItem{}
+            {Built a review material sharing platform within university.,Django-based framework to build back-end using MySql.Use Uwsgi and Django as service back-end, and Bootstrap and JQeury for the front-end.}
+        \resumeItemListEnd
+
+%    \resumeSubheading
+%      {\href{http://zhaduixueshe.com/}{ZhaDuiXueShe Official Website (http://zhaduixueshe.com)} }{}
+%      {Independent Developer}{Jul 2015 - Sep 2015}
+%      \resumeItemListStart
+%        \resumeItem{}
+%          {Built a review material sharing platform within university. Developed the blog system for classmates to share the review materials. The website supports Markdown format posts and back-end system including online registration system and administrator-based control system.}
+%        \resumeItem{}
+%          {Django-based framework to build back-end using MySql. Used Nginx handling the loading and static file. Use Uwsgi and Django as service back-end. The front-end was based on the Bootstrap and JQeury.}
+%      \resumeItemListEnd
+
     \resumeSubheading
       {\href{https://github.com/salamer/Juicy}{Juicy (github.com/salamer/Juicy)} }{}
       {Independent Developer}{Dec 2017 -- Jan 2018}
@@ -147,19 +160,17 @@
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
-\section{COMPETITION EXPERIENCE}
+%-----------COMPETITION EXPERIENCE-----------------
+\section{Competition Experiences}
   \resumeSubHeadingListStart
     \resumeSubSecheading
       {American Mathematical Modeling Contest / 2nd prize ( Honorable Mention )}{Feb 2016}
       \resumeItemListStart
         \resumeItem{}
-          {Fit the data from Algeria's available water resources, medical investments, and government regulatory data to obtain the correlations based on a gray system.}
-        \resumeItem{}
-          {Proposed KNN tricks to model the location of wells.}
+          {Fit the data from Algeria's available water resources, medical investments, and government regulatory data to obtain the correlations based on a gray system. Proposed KNN tricks to model the location of wells.}
       \resumeItemListEnd
     \resumeSubSecheading
-      {Amazon AWS Hackathon, Beijing / 3rd Prize ( Leader )}{Sep 2016}
+      {Amazon AWS Hackathon, Beijing / 3rd Prize ( team leader )}{Sep 2016}
       \resumeItemListStart
         \resumeItem{}
           {Used Golang and Javascript development via gRPC, React and Docker methods to realize the configuration files, automatically generating a complete set of front-end monitoring service. The source of the data is called by the scattered cluster in gRPC. Improved the structural support of the monitor's information source.}
@@ -174,7 +185,7 @@
 %-----------PROJECTS-----------------
 \section{Award}
   \resumeSubHeadingListStart
-    \resumeSubSecheading
+    \resumeListSubItem
       { Renmin third prize scholarship}{Jul 2015}
   \resumeSubHeadingListEnd
 %
