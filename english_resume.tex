@@ -43,12 +43,12 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{ #2 \vspace{-2pt}}
+    \textbf{#1}{ #2 \vspace{-1pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{0pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -105,30 +105,30 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {\href{http://bytedance.com/}{ByteDance (Tik Tok Parent Company)}}{Beijing}
-      {Backend Architecture Engineer}{Jun 2018 - present}
+      {Software Development Engineer}{Jun 2018 - present}
       \resumeItemListStart
         \resumeItem{}
-          {Responsible for its car app's backend architecture , and optimize its feed performance to 20\% at least,  develop and enrich the composition of the feed and content}
+          {Responsible for the development of the fundamental + live business of the App DCar, including feeds, live broadcasts, article and video pages, instant messaging, private messages push, widgets(like banner), covering App 75 \%\+ of traffic)}
         \resumeItem{}
-          {Responsible for the interaction with Bytedance's other apps like TopBuzz, Tik Tok, and optimize these apps' car-related advertise serving}
-        \resumeItem{}
-          {Build and maintain internal OLAP platform for video, articles, users, recommendation systems from scratch}
+          {Designed and developed from scratch, App's service disaster recovery and every levels' demotion, widget dispatch engine, private messages push, optimized feed distribution engine, significantly improved distribution efficiency}
+        % \resumeItem{}
+        %   {Build and maintain internal OLAP platform for video, articles, users, recommendation systems from scratch}
       \resumeItemListEnd
     \resumeSubheading
       {\href{http://baidu.com/}{Baidu (AIG, Knowledge Graph Group)}}{Beijing}
       {Algorithms Engineering Intern}{May 2017 - Aug 2017}
       \resumeItemListStart
         \resumeItem{}
-          {In the internal Hadoop platform, using naive bayesian method to do the data mining for all Baidu encyclopedia data, adding 3 million unknown knowledge graph data, and the accuracy rate was above 95 \%.}
+          {Based on Hadoop platform, using naive bayesian method to do the data mining for all Baidu encyclopedia data, adding 3 million unknown knowledge graph data, and the accuracy rate was above 95 \%.}
         \resumeItem{}
-          {In internal deep learning platform LegoNet, using neural network method to process the data of the search results and optimize the sorting of existing search results.}
+          {Based on internal deep learning platform LegoNet, using neural network method to process the data of the search results and optimize the sorting of existing search results.}
       \resumeItemListEnd
     \resumeSubheading
       {\href{http://megvii.com}{Megvii (Face++)}}{Beijing}
       {Software Engineering Intern}{Jun 2016 - Oct 2016}
       \resumeItemListStart
         \resumeItem{}
-          {Built a JSON-gRPC gateway application generator based on Google Protobuf coded by Golang, which can read a .proto file and automatically generate a complete set of Goroutine RESTful Web service.}
+          {Protobuf IDL gateway generator, based on Protobuf Generator, generate complete RESTful-RPC api gateway.}
         \resumeItem{}
           {Developed a deep learning training monitor via D3.js library internally. Designed a front-end cache structure to load data dynamically, and solved and optimized massive data visualization problem.}
         \resumeItem{}
@@ -143,7 +143,7 @@
         \resumeItem{}
           {In the first week, The times of searches is over 100,000 +, and was contacted by three angel investors, actively sought cooperation by six major companies in the field.}
         \resumeItem{}
-          {The main technologys are: ElasticSearch, React, Django, D3.js, libev, web crawler, high performance cache, Mysql and MongoDB}        
+          {Application technologies include ElasticSearch, Redis, Django, crawlers and their scheduling, front-end side ncludes React, D3.js, Material Design}        
       \resumeItemListEnd
 
       % \resumeSubheading
@@ -165,11 +165,11 @@
 %      \resumeItemListEnd
 
     \resumeSubheading
-      {\href{https://github.com/salamer/Juicy}{Juicy (github.com/salamer/Juicy)} }{}
-      {Independent Developer}{Dec 2017 -- Jan 2018}
+      {\href{http://www.ict.ac.cn/}{Institute of Computing Technology, Chinese Academy of Sciences} }{Beijing}
+      {Software Engineering Intern}{Dec 2016 -- Jan 2017}
       \resumeItemListStart
         \resumeItem{}
-          {Distributed Key/Value Database, With the implementation of the Raft consensus algorithm in Go, and it support the data compress and persistence.}
+          {In the group of Sun Yuzhong, responsible for the development of a big data platform project (non-public) in the group, during which read some big data papers.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -205,15 +205,15 @@
 %--------PROGRAMMING SKILLS------------
 \section{Skills}
   \resumeSubHeadingListStart
-    \resumeSubItem{Master web development, web crawler scraping.}
+    \resumeSubItem{Familiar with traffic distribution services, with rich experience.}
       {}
-    \resumeSubItem{Skilled in Python, Go, familiar with C, Javascript, Ruby}
+    \resumeSubItem{Skilled in Go, familiar with Python, C, Javascript, Ruby}
       {}
     \resumeSubItem{Skilled in data structures and algorithms, web protocol, database}
       {}
-    \resumeSubItem{Familiar with data mining, machine learning}
+    \resumeSubItem{Familiar with distributed system principles, Raft protocol, database principles}
       {}
-    \resumeSubItem{Language: Mandarin(native speaker), English (CET-6), Japanese (basic daily communication)}
+    \resumeSubItem{Language: Mandarin(native speaker), English (CET-6), Japanese (N2)}
       {}
   \resumeSubHeadingListEnd
 
