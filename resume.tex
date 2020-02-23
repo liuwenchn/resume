@@ -32,10 +32,10 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.425in}
-\addtolength{\evensidemargin}{-0.875in}
+\addtolength{\oddsidemargin}{-0.525in}
+\addtolength{\evensidemargin}{-0.675in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.7in}
+\addtolength{\topmargin}{-.6in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -109,14 +109,18 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {\href{http://bytedance.com/}{字节跳动}}{北京}
-      {后端基础工程师}{2018.6 -- 至今}
+      {后端工程师}{2018.6 -- 至今}
       \resumeItemListStart
         \resumeItem{}
-          {负责字节跳动旗下App懂车帝的基础+直播两大业务线的研发工作（包含了所有Feed, 直播, 图文视频详情页, 私信, 消息, 资源位, App 75\%以上流量及头条系大部分汽车模块的流量）}
+          {负责字节跳动旗下最大垂直业务懂车帝的基础+直播两大业务线的研发工作（包含了所有Feed, 直播, 图文视频详情页, 私信, 消息, 资源位等服务, 覆盖懂车帝App 75\%以上流量及头条系部分汽车相关模块的流量）}
         \resumeItem{}
-          {负责从零设计落地懂车帝服务各级容灾降级, 资源位投放引擎, 站内信push, 优化feed分发引擎, 显著提升分发效率}
-        % \resumeItem{}
-        %   {在职期间绩效全优, 部门前列, 拿过bonus}
+          {主导懂车帝服务各级别容灾降级的设计落地, 做到在网关层(nginx)稳定的情况下App的基本形态与功能稳定, 在字节系春节等各种导量的流量激增活动中保持各服务稳定可用}
+        \resumeItem{}
+          {优化feed分发服务与重构频道分发服务, 使用户频道个性化, 丰富关注, 精选等频道, 优化feed召回架构与推荐消重结构, 丰富feed元素, 提升feed效果, 整体改进了feed产品架构, 显著提升分发效率}
+        \resumeItem{}
+          {主导资源位投放服务(包括功能小球, banner, 弹窗等)的设计落地, 采用规则引擎应对各场景定向需求, 开发独立的Protobuf Generator应对各场景不同的数据结构, 框架限制, 并满足其向后扩展性, 对投放素材及规则采用工单制, 并增加测试状态, 保证投放操作安全性}
+        \resumeItem{}
+          {主导定向站内信投放服务的设计落地, 采用图数据库等实现用户定向召回, 利用消息队列削峰, 并在每一阶段设计限流降级保护下游安全稳定, 实现百万级站内消息分钟级别投放}
       \resumeItemListEnd
     \resumeSubheading
       {\href{http://baidu.com/}{百度 (人工智能部 知识图谱组)}}{北京}
@@ -125,27 +129,23 @@
         \resumeItem{}
           {在Hadoop平台上使用朴素贝叶斯方法对已有数据进行数据挖掘，新增300万的知识图谱连接数据，正确率在95\%\+}
         \resumeItem{}
-          {使用内部深度学习框架LegoNet, 用神经网络对搜索的点击结果的数据进行处理, 优化现有搜索结果的排序}
+          {使用内部深度学习框架LegoNet应用神经网络对搜索的点击结果的数据进行处理, 优化现有搜索结果的排序}
       \resumeItemListEnd
     \resumeSubheading
-      {\href{http://megvii.com}{Megvii (Face++)}}{北京}
+      {\href{http://megvii.com}{旷视科技 (Face++)}}{北京}
       {软件开发实习生}{2016.6 -- 2016.10}
       \resumeItemListStart
         \resumeItem{}
-          {基于Protobuf IDL的网关生成器, 基于Protobuf Generator, 生成完整RESTful-RPC的api gateway}
+          {主导基于Protobuf IDL的网关生成器. 基于Protobuf Generator, 生成完整RESTful-RPC的api gateway}
         \resumeItem{}
-          {使用D3.js编写了内部深度学习训练的监控, 通过编写前端缓存结构, 实现数据动态加载, 优化海量数据的前端展示问题}
-        \resumeItem{}
-          {使用React写内部云的控制台界面}
+          {使用D3.js编写了内部深度学习训练的监控, 使用React开发内部云的控制台界面}
       \resumeItemListEnd
     \resumeSubheading
       {\href{https://easyeasyoversea.com}{EasyEasyOversea (https://easyeasyoversea.com)}}{}
       {独立开发}{2017.1 -- 2017.2}
       \resumeItemListStart
         \resumeItem{}
-          {最好的留学工具, 改变了当下学生想留学但信息不对称的问题, 简化了申请海外院校和企业的过程, 独立设计开发运营}
-          \resumeItem{}
-          {刚上线一周, 搜索次数就超十万+, 被三家天使投资主动联系, 被六家该领域主要公司主动寻求合作}
+          {最好的留学工具, 改变了当下学生想留学但信息不对称的问题, 简化了申请海外院校和企业的过程, 独立设计开发运营, 刚上线一周, 搜索次数就超十万+, 被三家天使投资主动联系, 被六家该领域主要公司主动寻求合作}
           \resumeItem{}
           {应用技术包括ElasticSearch, Redis, Django, 爬虫及其调度, 前端包括React, D3.js, Material Design}  
       \resumeItemListEnd
@@ -172,15 +172,13 @@
       {美国数学建模大赛(MCM/ICM)(队长) / 二等奖(Honorable Mention)}{2016.2}
       \resumeItemListStart
         \resumeItem{}
-          {对阿尔及利亚的可用水资源,医疗投入,政府监管等数据进行拟合分析得相应的数据关系,并基于灰色系统理论进行建模}
-        \resumeItem{}
-          {巧用Kmeans方法对取水点建模}
+          {巧用Kmeans方法对取水点建模, 并基于灰色系统理论进行建模, 对阿尔及利亚的可用水资源,医疗投入进行模型优化}
       \resumeItemListEnd
     \resumeSubSecheading
       {亚马逊AWS Hackathon Beijing(队长) / 三等奖}{2016.9}
       \resumeItemListStart
         \resumeItem{}
-          {使用Golang + Javascript开发, 使用了Grpc, React, Docker技术, 可基于一份JSON 配置文件, 生成一整套前端监视器服务, 数据来源是通过Rpc调用的分散的集群的数据,并对监视器的信息源提高结构支持}
+          {应用Golang + Javascript开发, 使用了Grpc, React, Docker技术 基于JSON 配置的sensor监控服务}
       \resumeItemListEnd
     \resumeSubSecheading
       {BloomBerg Code Your Way to Global Data / 一等奖}{2016.11}
